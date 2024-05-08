@@ -1,15 +1,31 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/src/output.css" >
+
 
     <title>Title</title>
 </head>
 <body>
+    <nav class="bg-gray-800 p-4 flex justify-between">
 
-    <h1 class="under-line">Home</h1>
-    <a href="about.php">About</a>
-    <a href="contact.php">Contact</a>
+
+                <a href="#" class="text-white">Home</a>
+
+                <a href="#" class="text-white">About</a>
+
+                <a href="#" class="text-white">Services</a>
+
+                <a href="#" class="text-white">Contact</a>
+    </nav>
+    <h1>Home</h1>
+
 
     <p>Lorem ipsum dolor sit amet,
         consectetur adipisicing elit. Adipisci
