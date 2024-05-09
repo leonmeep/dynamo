@@ -9,7 +9,7 @@ require 'views/partials/nav.php';
 
 
 <p class="flex justify-center p-6 pr-6 pb-6 pl-6 pt-6 m-7 ml-7 mr-7 mt-7 mb-7 text-black">
-    If you'd like to receive emails about all our upcoming events please fill in the form below</p>
+    Subscribe to out mailing list and stay up to date on all our upcoming shows </p>
 
 <form class="flex justify-center p-6 pr-6 pb-6 pl-6 pt-6 m-7 ml-7 mr-7 mt-7 mb-7 text-black gap-1.5" action="/contact" method="POST">
     <div>
