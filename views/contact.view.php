@@ -17,10 +17,7 @@ require 'views/partials/header.php';
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required="">
     </div>
-    <div>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required="" placeholder="what's on your mind?"></textarea>
-    </div>
+
     <button type="submit" class="bg-indigo-400">Send</button>
 </form>
 
