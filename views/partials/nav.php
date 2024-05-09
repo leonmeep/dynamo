@@ -6,7 +6,5 @@
 
     <a href="/about.php" class="text-white hover:text-pink-600 hover:bg-indigo-400">About</a>
 
-    <a href="/services.php" class="text-white hover:text-pink-600 hover:bg-indigo-400">Services</a>
-
     <a href="/contact.php" class="text-white hover:text-pink-600 hover:bg-indigo-400">Contact</a>
 </nav>

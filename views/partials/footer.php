@@ -1,7 +1,7 @@
 
 
-<footer class="flex justify-end p-5 bg-indigo-500">
-    <p class="text-white">Copyright | Leon Birch Development | 2024</p>
+<footer>
+    <p>&copy; 2024 | Leon Birch Development | <a href="https://github.com/leonmeep/dynamo">GitHub</a></p>
 </footer>
 </body>
 </html>
