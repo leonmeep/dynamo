@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/src/output.css" >
-    <title><?= $title  ?>></title>
+    <title><?= $title  ?></title>
 
 </head>
 <body>
