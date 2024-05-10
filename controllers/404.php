@@ -1,7 +1,6 @@
 <?php
 
-
 $heading = "<a href='/'><img src= /img/sg.png alt='Strange Garden'></a>";
-$title = "About Us";
+$title = "Page Not Found";
 
-require 'views/about.view.php';
+require 'views/404.view.php';
