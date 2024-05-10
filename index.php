@@ -9,7 +9,7 @@ if ($uri === '/') {
 } elseif ($uri === '/about') {
     require 'controllers/about.php';
 } elseif ($uri === '/contact') {
-    require 'controllers/contact.php';
+    require 'controllers/subscribe.php';
 } else {
     require 'controllers/404.php';
 }
