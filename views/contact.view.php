@@ -21,7 +21,7 @@ require 'views/partials/nav.php';
         <input type="email" id="email" name="email" required="" placeholder="Your email...">
     </div>
 
-    <button type="submit" class="text-black hover:bg-green-400 hover:animate-pulse p-1 rounded-full">Send</button>
+    <button type="submit" class="text-black hover:bg-green-400 hover:animate-pulse p-1 rounded-full gap-1.5">Send</button>
 </form>
 
 <?php require 'views/partials/footer.php'; ?>
