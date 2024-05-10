@@ -1,7 +1,7 @@
 <?php
-require 'functions.php';
 
-$heading = "<img src= /img/sg.png alt='Strange Garden'>";
+
+$heading = "<a href='/about'><img src= /img/sg.png alt='Strange Garden'></a>";
 $title = "Home";
 
 
