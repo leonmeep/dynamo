@@ -785,3 +785,13 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
+
+.hover\:text-green-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
+.hover\:shadow-emerald-500:hover {
+  --tw-shadow-color: #10b981;
+  --tw-shadow: var(--tw-shadow-colored);
+}
