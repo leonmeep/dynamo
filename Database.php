@@ -5,13 +5,15 @@ class Database {
 
     public PDO $connection;
 
-    public function __construct()
+    public function __construct($config)
     {
+        $dsn = 'mysql:' . http_build_query($config, '', ';');
 
-        $dsn = 'mysql:host=localhost;dbname=strange-garden-ml;user=root;port=3306;charset=utf8mb4';
-        new PDO($dsn);
 
-        $this->connection = new PDO($dsn);
+        $this->connection = new PDO($dsn, 'root', '', [
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+        ]);
+
 
     }
 

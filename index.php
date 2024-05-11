@@ -5,9 +5,10 @@ require 'router.php';
 require 'Database.php';
 
 
+$config = require 'config.php';
 
-$db = new Database();
+$db = new Database($config);
 
-$subscribers = $db->query('SELECT * FROM subscribers')->fetchAll(PDO::FETCH_ASSOC);
+$subscribers = $db->query('SELECT * FROM subscribers')->fetchAll();
 
 dd($subscribers);
