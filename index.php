@@ -2,19 +2,12 @@
 
 require 'functions.php';
 require 'router.php';
+require 'Database.php';
 
 
-$dsn = 'mysql:host=localhost;dbname=strange-garden-ml;user=root;port=3306;charset=utf8mb4';
-new PDO($dsn);
 
-$pdo = new PDO($dsn);
+$db = new Database();
 
-$statement = $pdo->prepare('SELECT * FROM subscribers');
-$statement->execute();
+$subscribers = $db->query('SELECT * FROM subscribers')->fetchAll(PDO::FETCH_ASSOC);
 
-$subscribers = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-foreach ($subscribers as $subscriber) {
-   echo "<li>{$subscriber['name']} - {$subscriber['email']}</li>";
-
-}
+dd($subscribers);
