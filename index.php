@@ -2,15 +2,25 @@
 
 require 'functions.php';
 
-$uri = $_SERVER['REQUEST_URI'];
+$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 
-if ($uri === '/') {
-    require 'controllers/index.php';
-} elseif ($uri === '/about') {
-    require 'controllers/about.php';
-} elseif ($uri === '/contact') {
-    require 'controllers/subscribe.php';
+$routes =
+[
+    '/' => 'controllers/index.php',
+    '/about' => 'controllers/about.php',
+    '/subscribe' => 'controllers/subscribe.php',
+];
+
+
+if (array_key_exists($uri, $routes)) {
+    require $routes[$uri];
 } else {
+    http_response_code(404);
+
     require 'controllers/404.php';
+
+    die();
 }
+
+
