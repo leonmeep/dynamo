@@ -12,15 +12,19 @@ $routes =
     '/subscribe' => 'controllers/subscribe.php',
 ];
 
-
-if (array_key_exists($uri, $routes)) {
-    require $routes[$uri];
-} else {
+function abort() {
     http_response_code(404);
 
     require 'controllers/404.php';
 
     die();
+
+}
+
+if (array_key_exists($uri, $routes)) {
+    require $routes[$uri];
+} else {
+    abort();
 }
 
 
