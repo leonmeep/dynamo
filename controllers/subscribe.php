@@ -3,6 +3,6 @@
 
 
 $heading = "<img src='/img/sg.png' alt='Strange Garden'>";
-$title = "Contact Us";
+$title = "Subscribe";
 
 require 'views/subscribe.view.php';
