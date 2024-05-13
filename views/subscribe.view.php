@@ -16,7 +16,7 @@ require_once 'Database.php';
         <input type="text" class="shadow-md shadow-emerald-500" id="name" name="name" placeholder="Your name...">
 
         <?php if (isset($errors['name'])) : ?>
-            <p class="text-red-500 mt-3.5"><?= $errors['name'] ?></p>
+            <p class="text-red-500 text-xs mt-3.5"><?= $errors['name'] ?></p>
         <?php endif; ?>
     </div>
     <div>
@@ -24,7 +24,7 @@ require_once 'Database.php';
         <input type="email" class="shadow-md shadow-emerald-500" id="email" name="email" placeholder="Your email...">
 
         <?php if (isset($errors['email'])) : ?>
-            <p class="text-red-500 mt-3.5"><?= $errors['email'] ?></p>
+            <p class="text-red-500 text-xs mt-3.5"><?= $errors['email'] ?></p>
         <?php endif; ?>
     </div>
 
