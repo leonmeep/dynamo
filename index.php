@@ -11,4 +11,3 @@ $db = new Database($config['database']);
 
 $subscribers = $db->query('SELECT * FROM subscribers')->fetchAll();
 
-dd($subscribers);
