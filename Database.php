@@ -16,14 +16,19 @@ class Database {
 
     }
 
-    public function query($query)
+    public function query($query, $inputtedName, $inputtedEmail)
     {
-
         $statement = $this->connection->prepare($query);
-        $statement->execute();
+        $statement->execute([
+            ':name' => $inputtedName,
+            ':dob' => $inputtedEmail]);
 
         return $statement;
 
     }
 
 }
+
+$subscribers = $db->query("INSERT INTO `subscribers`(`name`, `email`) VALUES (:name, :email);")->fetchAll();
+
+dd($subscribers);
