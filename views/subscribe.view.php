@@ -2,6 +2,7 @@
 
 require 'views/partials/header.php';
 require 'views/partials/nav.php';
+require_once 'Database.php';
 
 ?>
 
