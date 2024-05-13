@@ -14,10 +14,18 @@ $title = "Subscribe";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    $db->query('INSERT INTO subscribers (name, email) VALUES (:name, :email)', [
-        'name' => $_POST['name'],
-        'email' => $_POST['email']
-    ]);
+    $errors = [];
+
+    if (strlen($_POST['name']) < 1) {
+        $errors['name'] = 'You must enter a name';
+        $errors['email'] = 'You must enter a valid email';
+    }
+    if (empty($errors)) {
+        $db->query('INSERT INTO subscribers (name, email) VALUES (:name, :email)', [
+            'name' => $_POST['name'],
+            'email' => $_POST['email']
+        ]);
+    }
 }
 
 require 'views/subscribe.view.php';
