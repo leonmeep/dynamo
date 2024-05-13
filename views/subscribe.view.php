@@ -9,7 +9,7 @@ require 'views/partials/nav.php';
 <p class="flex justify-center p-6 pr-6 pb-6 pl-6 pt-6 m-7 ml-7 mr-7 mt-7 mb-7 text-black">
     Subscribe to out mailing list and stay up to date on all our upcoming shows </p>
 
-<form class="flex justify-center p-6 pr-6 pb-6 pl-6 pt-6 m-7 ml-7 mr-7 mt-7 mb-7 text-black gap-1.5" action="/contact" method="POST">
+<form class="flex justify-center p-6 pr-6 pb-6 pl-6 pt-6 m-7 ml-7 mr-7 mt-7 mb-7 text-black gap-1.5" action="/subscribe" method="POST">
     <div>
         <label for="name" class="hidden">Name</label>
         <input type="text" class="shadow-md shadow-emerald-500" id="name" name="name" required="" placeholder="Your name...">
