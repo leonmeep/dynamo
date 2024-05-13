@@ -14,20 +14,28 @@ require_once 'Database.php';
     <div>
         <label for="name" class="hidden">Name</label>
         <input type="text" class="shadow-md shadow-emerald-500" id="name" name="name" placeholder="Your name...">
+
+        <?php if (isset($errors['name'])) : ?>
+            <p class="text-red-500 mt-3.5"><?= $errors['name'] ?></p>
+        <?php endif; ?>
     </div>
     <div>
         <label for="email" class="hidden">Email</label>
         <input type="email" class="shadow-md shadow-emerald-500" id="email" name="email" placeholder="Your email...">
+
+        <?php if (isset($errors['email'])) : ?>
+            <p class="text-red-500 mt-3.5"><?= $errors['email'] ?></p>
+        <?php endif; ?>
     </div>
 
-    <?php if (isset($errors['name'])) : ?>
-        <p class="text-red-500"><?= $errors['name'] ?></p>
-    <?php endif; ?>
-    <?php if (isset($errors['email'])) : ?>
-        <p class="text-red-500"><?= $errors['email'] ?></p>
-    <?php endif; ?>
+    <div>
+        <button type="submit" class="text-black gap-3 hover:bg-green-400 hover:animate-pulse rounded ">Subscribe</button>
+    </div>
 
-    <button type="submit" class="text-black hover:bg-green-400 hover:animate-pulse p-1 rounded-full gap-1.5">Subscribe</button>
+
+
+
+
 </form>
 
 <?php require 'views/partials/footer.php'; ?>
