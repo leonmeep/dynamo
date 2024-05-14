@@ -27,7 +27,7 @@ require_once 'Database.php';
             <p class="text-red-500 text-xs mt-3.5"><?= $errors['email'] ?></p>
         <?php endif; ?>
     </div>
-
+`
     <div>
         <button type="submit" class="text-black gap-3 hover:bg-green-400 hover:animate-pulse rounded ">Subscribe</button>
     </div>
