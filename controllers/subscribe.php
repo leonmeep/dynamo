@@ -20,16 +20,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     if (preg_match('/[^A-Za-z0-9 ]/', $_POST['name']))
     {
         $errors['name'] = 'Name should not contain special characters';
+
     }
 
     if (strlen($_POST['name']) === 0)
     {
-        $errors['name'] = 'Name should be at least 2 characters';
-    }
-    {
         $errors['name'] = 'Name cannot be empty';
     }
-
 
     if(empty($errors))
     {
